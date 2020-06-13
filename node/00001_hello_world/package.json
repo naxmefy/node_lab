@@ -1,0 +1,7 @@
+{
+  "name": "@naxmefy/node-hello-world",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ."
+  }
+}
