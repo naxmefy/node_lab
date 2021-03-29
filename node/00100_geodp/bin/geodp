@@ -1,0 +1,14 @@
+#!/bin/env node
+
+const args = process.argv.slice(2)
+
+if (!args || args.length < 2) {
+    console.error("Missing coordinates")
+    process.exit(1)
+}
+try {
+    console.log(require('../src')(args[0], args.slice(1)))
+} catch(err) {
+    console.error(err.message)
+    process.exit(1)
+}
